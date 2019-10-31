@@ -1,0 +1,18 @@
+<html>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+var data;
+	$.ajax({
+	  type: "GET",  
+	  url: "C:\Users\kelan\Google Drive\Project\ComponentList.csv",
+	  dataType: "text",       
+	  success: function(response)  
+	  {
+		data = $.csv.toArrays(response);
+		//generateHtmlTable(data);
+	  }   
+	});
+</script>
+
+
+</html>

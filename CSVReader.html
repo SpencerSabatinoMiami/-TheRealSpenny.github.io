@@ -1,0 +1,18 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<script> $.ajax({
+    url: "http://localhost/Users/kelan/Google Drive/Project/ComponentList.csv",
+    async: false,
+        xhrFields: {
+        withCredentials: true
+    success: function (csvd) {
+        data = $.csv.toArrays(csvd);
+    },
+    dataType: "text",
+    //complete: function () {
+        // call a function on complete 
+    }
+});
+</script>
